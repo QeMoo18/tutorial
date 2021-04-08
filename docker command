@@ -1,0 +1,16 @@
+endter to your host server using terminal
+docker ps
+ 
+root@ubuntu-s-4vcpu-8gb-nyc1-01:~# docker ps
+CONTAINER ID   IMAGE                    COMMAND                  CREATED             STATUS             PORTS                                            NAMES
+1b4465d8e84d   cloudera/quickstart      "/usr/bin/docker-qui…"   About an hour ago   Up About an hour   0.0.0.0:80->80/tcp, 0.0.0.0:8888->8888/tcp       musing_gauss
+c093a516f5d3   influxdb:1.8             "/entrypoint.sh infl…"   3 days ago          Up 3 days          0.0.0.0:8086->8086/tcp                           hopeful_yonath
+431c48146d79   portainer/portainer-ce   "/portainer"             3 days ago          Up 3 days          0.0.0.0:8000->8000/tcp, 0.0.0.0:9000->9000/tcp   portainer
+root@ubuntu-s-4vcpu-8gb-nyc1-01:~#
+root@ubuntu-s-4vcpu-8gb-nyc1-01:~# docker exec -it  musing_gauss /bin/bash
+[root@quickstart /]#
+[root@quickstart /]#
+[root@quickstart /]#
+[root@quickstart /]# exit
+exit
+root@ubuntu-s-4vcpu-8gb-nyc1-01:~#
